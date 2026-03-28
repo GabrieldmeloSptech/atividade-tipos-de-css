@@ -1,0 +1,184 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+
+.header {
+    background-color: #0a0a1a;
+    padding: 14px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 2px solid #00c2c7;
+}
+
+.header .container {
+    justify-content: space-between;
+}
+
+.titulo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #00c2c7;
+    letter-spacing: 1px;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #ccc;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+.navbar li a:hover,
+.navbar li.agora a {
+    color: #fff;
+}
+
+.navbar li {
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.login {
+    background-image: url(../assets/imgs/bg-jelly-fish-para_outras_pags.png);
+    background-size: cover;
+    background-position: center;
+    min-height: calc(100vh - 52px - 80px);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.login::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(5, 10, 40, 0.65);
+}
+
+.login .container {
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.card-login {
+    background-color: #e8e8e8;
+    border-radius: 10px;
+    padding: 40px 50px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.card-login h2 {
+    color: #e8194b;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.campo {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.campo span {
+    font-size: 0.75rem;
+    color: #e8194b;
+    font-weight: 600;
+}
+
+.campo input {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1.5px solid #00c2c7;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 0.9rem;
+    color: #333;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.campo input:focus {
+    border-color: #00a0a5;
+}
+
+.botao {
+    margin-top: 8px;
+    padding: 10px;
+    background-color: #e8194b;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.botao:hover {
+    background-color: #c41040;
+}
+
+
+.footer {
+    background-color: #00c2c7;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer .container {
+    flex-direction: column;
+    gap: 6px;
+    justify-content: center;
+}
+
+.footer h4 {
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.version {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.75rem;
+}
